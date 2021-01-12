@@ -1,0 +1,30 @@
+@import './layouts/_grid.scss';
+
+.test {
+  @apply text-gray-700 p-4;
+
+  &_working {
+    @apply text-green-500;
+  }
+
+  & .nested {
+    @apply text-blue-500;
+  }
+}
+
+.highlight {
+    color: inherit;
+    position: relative;
+    z-index: 1;
+    &:before {
+        content: "";
+        transition: .15s ease-in;
+        position: absolute;
+        z-index: -1;
+        bottom: 0;
+        height: 10px;
+        width: 100%;
+        background-color: rgba(255,207,3,.55);
+        left: 4px;
+    }
+}

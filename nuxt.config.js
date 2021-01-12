@@ -18,11 +18,35 @@ export default {
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
   css: [
+    '~/assets/sass/main.scss'
   ],
 
+  purgeCSS: {
+    whitelist: [
+      "dark-mode",
+      "aos-init",
+      "aos-animate",
+      "data-aos-delay",
+      "data-aos-duration",
+      "fade-up",
+      "zoom-in"
+    ],
+  },
+  
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
   plugins: [
-    { src: 'plugins/all.js', ssr: false },
+    {
+      src: 'plugins/all.js',
+      ssr: false
+    },
+    {
+      src: "@/plugins/aos",
+      mode: "client"
+    },
+    {
+      src: "@/plugins/perspective",
+      mode: "client"
+    },
   ],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)
@@ -34,8 +58,10 @@ export default {
     // '@nuxtjs/eslint-module',
     // https://go.nuxtjs.dev/stylelint
     // '@nuxtjs/stylelint-module',
-    // https://go.nuxtjs.dev/tailwindcss
-    '@nuxtjs/tailwindcss'
+    // Doc: https://github.com/nuxt-community/color-mode-module
+    "@nuxtjs/color-mode",
+    // Doc: https://github.com/nuxt-community/tailwindcss-module
+    "@nuxtjs/tailwindcss"
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
@@ -49,13 +75,18 @@ export default {
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
+    postcss: {
+      plugins: {
+        "postcss-nested": {}
+      }
+    }
   },
 
   // Defaults options
   tailwindcss: {
-    cssPath: '~/assets/css/tailwind.css',
-    configPath: 'tailwind.config.js',
-    exposeConfig: false,
-    config: {}
-  }
+    // cssPath: '~/assets/css/tailwind.css',
+    // configPath: 'tailwind.config.js',
+    // add '~tailwind.config` alias
+    exposeConfig: true,
+  },
 }

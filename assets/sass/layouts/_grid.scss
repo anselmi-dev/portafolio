@@ -1,0 +1,16 @@
+.container-layout {
+    width: 100%;
+    @apply px-20 mx-auto;
+    @screen sm {
+      max-width: theme('screens.sm');
+    }
+    @screen md {
+      max-width: theme('screens.md');
+    }
+    @screen lg {
+      max-width: theme('screens.lg');
+    }
+    @screen xl {
+      max-width: theme('screens.xl');
+    }
+  }

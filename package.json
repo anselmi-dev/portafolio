@@ -15,12 +15,16 @@
   "dependencies": {
     "@nuxtjs/axios": "^5.12.2",
     "alpinejs": "^2.8.0",
+    "aos": "^2.3.4",
     "core-js": "^3.6.5",
-    "nuxt": "^2.14.6"
+    "nuxt": "^2.14.6",
+    "vue-kinesis": "^1.2.3"
   },
   "devDependencies": {
+    "@nuxtjs/color-mode": "^2.0.2",
     "@nuxtjs/eslint-config": "^3.1.0",
     "@nuxtjs/eslint-module": "^2.0.0",
+    "@nuxtjs/style-resources": "^1.0.0",
     "@nuxtjs/stylelint-module": "^4.0.0",
     "@nuxtjs/tailwindcss": "^3.1.0",
     "@vue/test-utils": "^1.1.0",
@@ -30,8 +34,13 @@
     "eslint": "^7.10.0",
     "eslint-plugin-nuxt": "^1.0.0",
     "jest": "^26.5.0",
+    "node-sass": "^5.0.0",
+    "pug": "^3.0.0",
+    "pug-plain-loader": "^1.1.0",
+    "sass-loader": "^10.1.0",
     "stylelint": "^13.7.2",
     "stylelint-config-standard": "^20.0.0",
+    "tailwindcss-dark-mode": "^1.1.7",
     "vue-jest": "^3.0.4"
   }
 }

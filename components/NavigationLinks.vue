@@ -3,23 +3,25 @@
     <div
       class="flex flex-col sm:flex-row items-center relative flex-1 justify-end"
     >
-        <nuxt-link to="blog" class="py-2 sm-4 sm:py-2 sm:px-4 text-white sm:text-gray-800 hover:bg-primary-light rounded transition duration-300 font-bold">
+        <toggle-dark/>
+        <nuxt-link to="blog"
+          class="py-2 sm-4 sm:py-2 sm:px-4 text-base sm:text-gray-800 hover:bg-primary-light rounded transition duration-300 font-bold leading-none dark:text-white">
             Proyectos
         </nuxt-link>
-        <nuxt-link to="blog" class="py-2 sm-4 sm:py-2 sm:px-4 text-white sm:text-gray-800 hover:bg-primary-light rounded transition duration-300 font-bold">
+        <nuxt-link to="blog" class="py-2 sm-4 sm:py-2 sm:px-4 text-base sm:text-gray-800 hover:bg-primary-light rounded transition duration-300 font-bold leading-none dark:text-white">
             Blog
         </nuxt-link>
-        <nuxt-link to="blog" class="py-2 sm-4 sm:py-2 sm:px-4 text-white sm:text-gray-800 hover:bg-primary-light rounded transition duration-300 font-bold">
+        <nuxt-link to="blog" class="py-2 sm-4 sm:py-2 sm:px-4 text-base sm:text-gray-800 hover:bg-primary-light rounded transition duration-300 font-bold leading-none dark:text-white">
             Fotografía
         </nuxt-link>
-        <div class=" sm:border-l sm:border-gray-300 py-2">
-            <nuxt-link to="blog" class="sm:ml-4 py-2 px-3 md:px-4 rounded bg-primary-light text-gray-800 font-bold hover:bg-primary transition duration-300">
+        <div class="sm:border-l sm:border-gray-300 py-2">
+            <nuxt-link to="blog" class="sm:ml-4 py-2 px-3 md:px-4 rounded bg-primary-light text-gray-800 font-bold hover:bg-primary transition duration-300 leading-none dark:text-white">
                 Sobre mi
             </nuxt-link>
         </div>
     </div>
     <div
-      class="sm:mt-0 flex flex-col sm:flex-row items-center sm:border-l sm:border-gray-300"
+      class="sm:mt-0 flex flex-col sm:flex-row items-center"
     >
       <div class="hidden sm:flex items-center">
         <div class="user cursor-pointer relative flex items-cente pl-4">

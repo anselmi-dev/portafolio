@@ -1,8 +1,8 @@
 <template>
-  <div>
+  <div id="header">
     <div
-      class="transition duration-300 transform fixed right-0 top-0 h-screen bg-gray-500 z-50 py-3 w-1/2 sm:hidden overflow-y-auto"
-      :class="{'translate-x-0 ease-out': showPanel, 'translate-x-full ease-in': !showPanel}"
+      class="transition duration-300 transform fixed right-0 top-0 h-screen bg-gray-500 dark:bg-white z-50 py-3 w-1/2 sm:hidden overflow-y-auto"
+      :class="{'translate-x-0 ease-out': !showPanel, 'translate-x-full ease-in': showPanel}"
     >
       <button
         @click="tooglePanel"
@@ -20,7 +20,7 @@
       </nav>
     </div>
     <!-- block:Header -->
-    <header class="w-full z-40 bg-white">
+    <header class="w-full z-40">
       <div
         class="container mx-auto h-16 flex justify-between items-center"
       >
